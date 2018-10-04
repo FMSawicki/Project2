@@ -1,10 +1,14 @@
 <h1>YardBay</h1>
 
-<div class="itemView">
-{{!-- <img src="{{item.picture}}"></img> --}}
-<h3>{{item.name}}</h3><br>
-<p>Starting Bid: {{item.starting}}, Current Bid: {{item.current}}</p><br>
-<p>{{item.description}}</p><br>
-<p>Date Listed: {{item.createdAt}}</p><br>
-<p>Seller: {{item.lister}}</p><br>
+
+{{!-- {{#each Item}} --}}
+<div class="itemShow">
+<img src="{{Item.picture}}"></img>
+<h3>{{Item.name}}</h3><br>
+<p>Date Listed: {{Item.createdAt}}</p><br>
 </div>
+{{!-- {{/each}} --}}
+<aside id="sidebar">
+    <h3>Auctions</h3><br>
+    <a href="/listitem">List Item</a>
+</aside>

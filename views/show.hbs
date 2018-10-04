@@ -1,0 +1,12 @@
+<div class="itemView">
+<h3>{{Item.name}}</h3><br>
+<img src="{{Item.picture}}"></img>
+<p>Starting Bid: {{Item.starting}}, Current Bid: {{Item.current}}</p><br>
+<p>{{Item.description}}</p><br>
+<p>Date Listed: {{Item.createdAt}}</p><br>
+<p>Seller: {{Item.lister}}</p><br>
+    <form id="makeBid">
+        <input placeholder="Enter bid">
+        <button id:'enterNewBid' action:'#'>Bid On Item</button>
+    </form>
+</div>
