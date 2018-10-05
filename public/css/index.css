@@ -33,6 +33,7 @@ body {
     width: 310px;
 }
 .itemView {
+    border-radius: 25%;
     border: solid black;
     width: 400px;
     height: 400px;

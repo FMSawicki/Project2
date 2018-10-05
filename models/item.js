@@ -6,24 +6,18 @@ const Bid = new Schema({
   createdAt: {
     type: Date,
     default: Date.now()
-  },
-  author: {
-    type: Schema.Types.ObjectId,
-    ref: "User"
   }
 });
 
 const Item = new Schema({
   name: String,
-  picture: String,
   description: String,
   createdAt: {
     type: Date,
     default: Date.now()
   },
   starting: Number,
-  current: Number,
-  bids: [bid]
+  bids: [Bid]
 });
 
 module.exports = {

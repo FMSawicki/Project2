@@ -26,7 +26,7 @@ module.exports = {
         starting: req.body.createStarting
       })
       .then(item => {
-        res.redirect(`/item/${item._id}`);
+        // res.redirect(`/item/${item._id}`);
       });
   }
 };
