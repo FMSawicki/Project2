@@ -3,6 +3,7 @@ const app = express();
 const hbs = require("hbs");
 const routes = require("./routes/routes");
 const bodyParser = require("body-parser");
+app.set("port", process.env.PORT || 3001);
 
 app.use(express.static("public"));
 
@@ -15,6 +16,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/", routes);
 
-app.listen(4000, (req, res) => {
-  console.log("ACAB");
+app.listen(app.get("port"), () => {
+  console.log(`✅ PORT: ${app.get("port")} 🌟`);
 });
